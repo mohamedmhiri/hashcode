@@ -1,6 +1,8 @@
 const fs = require('fs');
 
-let file = fs.readFileSync('./input/exple.txt', 'utf8');
+let file = fs.readFileSync(`./input/${process.argv[2]}`, 'utf8');
+console.log(process.argv);
+
 
 let firstInputRow = file.split('\n')[0];
 let rowsNbr = firstInputRow.split(' ')[0];
@@ -12,4 +14,4 @@ console.log(`colNbr: ${colNbr}`);
 console.log(`minNbrIngredients: ${minNbrIngredients}`);
 console.log(`maxTotalCellsNbr: ${maxTotalCellsNbr}`);
 
-fs.writeFileSync('./output/exple.txt', maxTotalCellsNbr, 'utf8');
+fs.writeFileSync(`./output/${process.argv[2]}`, maxTotalCellsNbr, 'utf8');
