@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-let file = fs.readFileSync(`./input/${process.argv[2]}`, 'utf8');
+let file = fs.readFileSync(`./input/${process.argv[2]}.in`, 'utf8');
 console.log(process.argv);
 
 
@@ -14,4 +14,4 @@ console.log(`colNbr: ${colNbr}`);
 console.log(`minNbrIngredients: ${minNbrIngredients}`);
 console.log(`maxTotalCellsNbr: ${maxTotalCellsNbr}`);
 
-fs.writeFileSync(`./output/${process.argv[2]}`, maxTotalCellsNbr, 'utf8');
+fs.writeFileSync(`./output/${process.argv[2]}.out`, maxTotalCellsNbr, 'utf8');
