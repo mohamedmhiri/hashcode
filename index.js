@@ -12,4 +12,4 @@ console.log(`colNbr: ${colNbr}`);
 console.log(`tomNbr: ${tomNbr}`);
 console.log(`mushNbr: ${mushNbr}`);
 
-fs.writeFileSync('./output/exple.txt',mushNbr, 'utf8');
+fs.writeFileSync('./output/exple.txt', mushNbr, 'utf8');
