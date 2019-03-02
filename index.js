@@ -20,6 +20,8 @@ for (var line = 0; line < file.split('\n').length-1; line++) {
         slideNbr++;
         hIndex.push(line-1)
         resH = `${resH}\n${line-1}`;
+        console.log(resH);
+        
     } else if (type == 'V'){
         vIndex.push(line-1)
         if (vIndex.length == 2) {
@@ -27,6 +29,8 @@ for (var line = 0; line < file.split('\n').length-1; line++) {
             slideNbr++;
             vIndex = []
         }
+        console.log(resV);
+        
 
     }
     //let tagNbr = file.split('\n')[line].split(' ')[1];
